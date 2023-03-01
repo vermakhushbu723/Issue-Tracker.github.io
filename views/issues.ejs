@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="issues.css">
+    <link rel="shortcut icon" href="titlelogo.svg" type="image/x-icon">
+    <title>Repository</title>
+</head>
+<body>
+    <!-- issues page in issue tracker -->
+    <h1>Create An Issue For <span id="special"><%=hel[0].name%></span></h1>
+    <!-- creating an issue -->
+    <form action="/newissue" method="post">
+        <input type="text" name="authorname" placeholder="Author's Name">
+        <textarea id="input" name="issue" placeholder="Issue" cols="46" rows="4"></textarea>
+        <input type="text" id="coloor" name="tag" placeholder="Tag">
+        <input id="submit" type="submit" value="Submit">
+        <input type="hidden" name="repoid" value=<%=postid%>>
+    </form>
+</body>
+</html>

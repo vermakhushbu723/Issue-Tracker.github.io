@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="repository.css">
+    <link rel="shortcut icon" href="titlelogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Respository</title>
+</head>
+<body>
+    <!-- repository default page -->
+    <h1><%=hel[0].name%></h1>
+    <!-- all the details of repository -->
+    <div id="allrepo">
+            <div id="profile">
+                <%=hel[0].author[0]%>
+            </div>
+            <span id="mainauthor">
+                <%=hel[0].author+" Created A Repository"+" "+hel[0].author+"/"+hel[0].name%>
+            </span>
+            <div id="maincontent">
+                <span id="mainrepo"><%=hel[0].author.replace(/\s/g, "")+"/"+hel[0].name%></span>
+                <p>Updated Yesterday</p>
+                <a href="/">
+                    <div id="view"><i class="fas fa-undo-alt"></i> <span id="viewtext">Back</span></i></div>
+                </a>
+
+            </div>
+            <div id="line"></div>
+    </div>
+    <!-- all the issues of the current repository -->
+    <div id="issues">
+        <span id="issuehead">Issues</span>
+        <form action="/issues" method="post">
+            <input type="hidden" name="repoid" value=<%=repoid%>>
+            <input id="issuebutton" type="submit" value="New Issue">
+        </form>
+    </div>
+    <% for(var i=0; i<arr.length; i++){%>
+        <div id="issuecontent">
+            <p><%=arr[i].name%></p>
+            <span><%=arr[i].issuename%></span> 
+            <span id="tag"><%=arr[i].tag%></span>
+            
+        </div>
+    <%}%>
+</body>
+</html>

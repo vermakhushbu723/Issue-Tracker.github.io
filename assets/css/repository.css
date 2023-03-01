@@ -1,0 +1,277 @@
+
+/* displaying repository css files */
+
+*{
+    margin: 0;
+    
+}
+/* color=010409 */
+body{
+    background-color: #010409;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+main{
+    position: relative;
+    top: -100vh;
+}
+
+header{
+    position: relative;
+    z-index: 2;
+    height: 8vh;
+    width: 100vw;
+    background-color: #161B22;
+}
+
+aside{
+    position: relative;
+    z-index: 1;
+    width: 20vw;
+    height: 200vh;
+    background-color: #0d1117;
+}
+
+#newrepo{
+    background-color: #238636; border: none; color: aliceblue; border-radius: 5px;  padding: 2px 20px 4px 20px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: small;
+    top: 44px;
+    left: 48%;
+    text-decoration: none;
+}
+
+#repotag{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 43px;
+    left: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+header>img{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 2%;
+    top: 13px;
+}
+
+#navrepo{
+    color: white;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    position: relative;
+    left: 193px;
+    top: 0px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#navnewrepo{
+    background-color: #238636; border: none; color: aliceblue; border-radius: 5px; padding: 2px 20px 4px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";    
+    position: relative;
+    left: 85%;
+    top: 0px;
+    font-size: small;
+    text-decoration: none;
+}
+
+#allactivity{
+    color: white;
+    position: relative;
+    top: -710px;
+    left: 22%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+#allrepo{
+    border: 2px solid rgba(255, 255, 255, 0.349);
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    height: auto;
+    width: 45vw;
+    left: 25%;
+}
+
+#asiderepo{
+    
+    position: relative;
+    top: 85px;
+    height: auto;
+    left: 17px;
+    width: 88%;
+}
+#content{
+    color: #58A6FF;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";    
+    margin: 8px 0px;
+}
+#asiderepo>a{
+    text-decoration: none;
+}
+
+#asiderepo>a:hover{
+    text-decoration: underline;
+    text-decoration-color: #58A6FF;
+}
+
+#content>i{
+    color: #8B949E;
+}
+
+#profile{
+    
+    color: white;
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";   
+    border: 2px solid white;
+    width: 27px;
+    height: 35px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#mainauthor{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: white;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+#maincontent{
+    background-color: #0d1117;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: white;
+    width: 80%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+#mainrepo{
+    font-size: larger;
+    position: relative;
+    left: 5px;
+}
+#maincontent>p{
+    font-size: x-small;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: #C9D1D9;
+}
+
+#view{
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 5px;
+    width: 55px;
+    height: 22px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    left: 480px;
+    top: -35px;
+}
+
+#view:hover{
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+#view>i{
+    font-size: x-small;
+    position: relative;
+    top: -2px;
+}
+
+#viewtext{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: small;
+    padding-left: 2px;
+    position: relative;
+    top: -1.5px;
+    cursor: pointer;
+}
+
+#line{
+    margin-top: 25px;
+    
+    margin-bottom: 20px;
+}
+
+
+body{
+    background-color: #010409;
+    color: white;
+}
+h1{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+#issuehead{
+    position: relative;
+    top: 60px;
+    left: 28%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: xx-large;
+}
+
+#issuebutton{
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    left: 63%;
+    top: 30px;
+}
+
+#issuecontent{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    position: relative;
+    top: 80px;
+    left: 415px;
+    border: 1px solid white;
+    width: 620px;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 7px;
+}
+
+#tag{
+    color: #0b64eb;
+    font-size: smaller;
+    border: 2px solid #135CC8;
+    border-radius: 7px;
+    padding: 1px 4px 4px 4px;
+    margin-top: -10px;
+    position: absolute;
+    left: 500px;
+}
+a{
+    text-decoration: none;
+}
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:white }

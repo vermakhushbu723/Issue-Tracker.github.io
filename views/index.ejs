@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="titlelogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- index page -->
+    <!-- header -->
+    <header>
+        <img src="images/titlelogo.svg" alt="Logo">
+        <a href="/" id="navrepo">Repositories</a>
+        <a id="navnewrepo" href="/new">New</a>
+    </header>
+    <!-- aside showing all repos -->
+    <aside>
+        <span id="repotag">Repositories</span>
+        <a id="newrepo" href="/new">New</a>
+        <div id="asiderepo">
+            
+            <% for(var i=0; i<arr.length; i++){%>
+                <a href=<%="/repository?oid="+arr[i]._id%>>
+                    <div id="content">
+                        
+                        <i class="fas fa-folder"></i>
+                        <%=arr[i].author.replace(/\s/g, "")+"/"+arr[i].name%>
+                        
+                        
+                    </div>
+                </a>
+
+            <%}%>
+            
+        </div>
+    </aside>
+    <main>
+        <!-- main section -->
+        <span id="allactivity">All Activity</span>
+        <!-- all repositories with details -->
+        <div id="allrepo">
+            <% for(var i=0; i<arr.length; i++){%>
+                <div id="profile"><%=arr[i].author[0]%></div><span id="mainauthor"><%=arr[i].author+" Created A Repository"+" "+arr[i].author+"/"+arr[i].name%></span>
+                <div id="maincontent">
+                    <span id="mainrepo"><%=arr[i].author.replace(/\s/g, "")+"/"+arr[i].name%></span>
+                    <p>Updated Yesterday</p>
+                    <a href=<%="/repository?oid="+arr[i]._id%>>
+                        <div id="view"><i class="far fa-eye"> <span id="viewtext">View</span></i></div>
+                    </a>
+                </div>
+                <div id="line"></div>
+            <%}%>
+        </div>
+    </main>
+    <!-- exploring few latest repositories -->
+    <div id="explore" style="position: relative; left: 1200px; top: -1510px;">
+        <span id="repotag" style="position: relative; left: 15px;">Explore Repositories</span>
+        <div id="asiderepo">
+            
+            <% for(var i=0; i<arr.length/2; i++){%>
+                <a href=<%="/repository?oid="+arr[i]._id%>>
+                    <div id="content">
+                        
+                        <i class="fas fa-folder"></i>
+                        <%=arr[i].author.replace(/\s/g, "")+"/"+arr[i].name%>
+                        
+                        
+                    </div>
+                </a>
+
+            <%}%>
+            
+        </div>
+    </div>
+</body>
+</html>
